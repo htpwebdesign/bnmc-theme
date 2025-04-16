@@ -54,7 +54,7 @@
 							"fontStyle": "italic",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/Raleway-Italic.ttf"
+								"file:./assets/fonts/Raleway-Italic.woff2"
 							]
 						}
 					],
@@ -69,7 +69,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "300",
 							"src": [
-								"file:./assets/fonts/Raleway-Light.ttf"
+								"file:./assets/fonts/Raleway-Light.woff2"
 							]
 						}
 					],
@@ -84,7 +84,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "500",
 							"src": [
-								"file:./assets/fonts/Raleway-Medium.ttf"
+								"file:./assets/fonts/Raleway-Medium.woff2"
 							]
 						}
 					],
@@ -99,7 +99,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/Raleway-Regular.ttf"
+								"file:./assets/fonts/Raleway-Regular.woff2"
 							]
 						}
 					],
@@ -114,7 +114,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/AnticDidone-Regular.ttf"
+								"file:./assets/fonts/AnticDidone-Regular.woff2"
 							]
 						}
 					],
