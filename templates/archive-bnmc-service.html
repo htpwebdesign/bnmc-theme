@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:cover {"dimRatio":70,"overlayColor":"sky-blue","isUserOverlayColor":true,"isDark":false,"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-sky-blue-background-color has-background-dim-70 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"fontSize":"h1"} -->
+<h1 class="wp-block-heading has-text-align-center has-h-1-font-size">Services</h1>
+<!-- /wp:heading --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group"><!-- wp:query {"queryId":2,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"layout":{"contentSize":null,"type":"constrained"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":50,"customOverlayColor":"#FFF","isDark":false,"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#FFF"></span><div class="wp-block-cover__inner-container"><!-- wp:post-title /-->
+
+<!-- wp:post-content {"layout":{"type":"constrained"}} /--></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"typography":{"fontSize":"14px"}},"layout":{"type":"flex"}} -->
+<div class="wp-block-group" style="font-size:14px"><!-- wp:post-terms {"term":"category"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"40px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
