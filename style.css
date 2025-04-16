@@ -1,7 +1,7 @@
 /*
 Theme Name: bnmc-theme
 Theme URI: https://projects.bcitwebdeveloper.ca/
-Author: FWD 40
+Author: FWD 40 - Group 1 - Nicole, Brandon, Mark, Carlo
 Author URI: https://projects.bcitwebdeveloper.ca/
 Description: A custom WordPress theme for the FWDP Capstone Project.
 Requires at least: 6.7
@@ -14,3 +14,8 @@ Text Domain: bnmc-theme
 Update URI: false
 */
 
+/* Navigation Bar on Desktop */
+div .navigation a:hover {
+  text-decoration: underline;
+  text-decoration-color: #46c8b9;
+}
