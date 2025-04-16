@@ -112,12 +112,12 @@ add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 add_image_size( '400x500', 400, 500, true );
 add_image_size( '200x250', 200, 250, true );
 
-// Make custom image sizes selectable in the admin
-function mindset_add_custom_image_sizes( $size_names ) {
-    $new_sizes = array(
-        '400x500' => __( '400x500', 'bnmc-theme' ),
-        '200x250' => __( '200x250', 'bnmc-theme' ),
-    );
-    return array_merge( $size_names, $new_sizes );
+// Make custom sizes selectable from WordPress admin.
+function bnmc_add_custom_image_sizes( $size_names ) {
+	$new_sizes = array(
+		'400x500' => __( '400x500', 'bnmc-theme' ),
+		'200x250' => __( '200x250', 'bnmc-theme' ),
+	);
+	return array_merge( $size_names, $new_sizes );
 }
-add_filter( 'image_size_names_choose', 'mindset_add_custom_image_sizes' );
+add_filter( 'image_size_names_choose', 'bnmc_add_custom_image_sizes' );
