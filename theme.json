@@ -126,63 +126,63 @@
 			"fontSizes": [
 				{
 					"name": "Navigation",
-					"slug": "nav",
-					"size": "0.875rem"
+					"size": "0.875rem",
+					"slug": "nav"
 				},
 				{
 					"name": "Paragraph",
-					"slug": "paragraph",
-					"size": "1.25rem"
+					"size": "1.25rem",
+					"slug": "paragraph"
 				},
 				{
 					"name": "Button",
-					"slug": "button",
-					"size": "1.1rem"
+					"size": "1.1rem",
+					"slug": "button"
 				},
 				{
 					"name": "Heading 1",
-					"slug": "h1",
-					"size": "2.5rem"
+					"size": "2.5rem",
+					"slug": "h1"
 				},
 				{
 					"name": "Heading 2",
-					"slug": "h2",
-					"size": "2rem"
+					"size": "2rem",
+					"slug": "h2"
 				},
 				{
 					"name": "Heading 3",
-					"slug": "h3",
-					"size": "1.75rem"
+					"size": "1.75rem",
+					"slug": "h3"
 				},
 				{
 					"name": "Heading 4",
-					"slug": "h4",
-					"size": "1.5rem"
+					"size": "1.5rem",
+					"slug": "h4"
 				},
 				{
 					"name": "Heading 5",
-					"slug": "h5",
-					"size": "1.25rem"
+					"size": "1.25rem",
+					"slug": "h5"
 				},
 				{
 					"name": "Small",
-					"slug": "small",
-					"size": "0.875rem"
+					"size": "0.875rem",
+					"slug": "small"
 				},
 				{
 					"name": "Medium",
-					"slug": "medium",
-					"size": "1rem"
+					"size": "1rem",
+					"slug": "medium"
 				},
 				{
 					"name": "Large",
-					"slug": "large",
-					"size": "1.5rem"
+					"size": "1.5rem",
+					"slug": "large"
 				},
 				{
 					"name": "Extra Large",
-					"slug": "extra-large",
-					"size": "2rem"
+					"size": "2rem",
+					"slug": "extra-large"
 				}
 			]
 		},
@@ -192,10 +192,6 @@
 		"color": {
 			"background": "#fbfefd",
 			"text": "#2C2D2D"
-		},
-		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--raleway-regular)",
-			"fontSize": "var(--wp--preset--font-size--paragraph)"
 		},
 		"elements": {
 			"button": {
@@ -210,11 +206,6 @@
 			"caption": {
 				"color": {
 					"text": "#2C2D2D"
-				}
-			},
-			"heading": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--antic-didone-regular)"
 				}
 			},
 			"h1": {
@@ -241,7 +232,16 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--h5)"
 				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--antic-didone-regular)"
+				}
 			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--raleway-regular)",
+			"fontSize": "var(--wp--preset--font-size--paragraph)"
 		}
 	},
 	"templateParts": [
