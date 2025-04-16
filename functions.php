@@ -64,3 +64,25 @@ function bnmc_get_service_meta_for_api( $object ) {
     );
 }
 add_action( 'rest_api_init', 'bnmc_add_service_meta_to_rest' );
+
+function add_google_fonts() {
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&display=swap', false );
+}
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
+// add image sizes
+// Crop images to 400px by 500px
+add_image_size( '400x500', 400, 500, true );
+
+// Crop images to 200px by 250px
+add_image_size( '200x250', 200, 250, true );
+
+// Make custom sizes selectable from WordPress admin.
+function mindset_add_custom_image_sizes( $size_names ) {
+	$new_sizes = array(
+		'400x500' => __( '400x500', 'bnmc-theme' ),
+		'200x250' => __( '200x250', 'bnmc-theme' ),
+	);
+	return array_merge( $size_names, $new_sizes );
+}
+add_filter( 'image_size_names_choose', 'mindset_add_custom_image_sizes' );
