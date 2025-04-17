@@ -1,5 +1,36 @@
 <?php
 
+// Theme setup
+function enqueue_normalize_css() {
+    wp_enqueue_style(
+        'normalize',
+        get_template_directory_uri() . '/styles/normalize.css', 
+        array(),
+        null, 
+        'all' 
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_normalize_css');
+
+function my_theme_enqueue_front_page_styles() {
+    if ( is_front_page() ) {
+        wp_enqueue_style( 
+            'front-page-style', 
+            get_template_directory_uri() . '/styles/front-page.css', 
+            array(), 
+            '1.0.0' 
+        );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_front_page_styles' );
+
+function enqueue_theme_styles() {
+    wp_enqueue_style('bnmc-theme', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'enqueue_theme_styles');
+
+// 
+
 // Register Custom Post Type for 'Services'
 function bnmc_register_service_post_type() {
     $labels = array(

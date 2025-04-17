@@ -19,3 +19,9 @@ div .navigation a:hover {
   text-decoration: underline;
   text-decoration-color: #46c8b9;
 }
+
+/* Footer Styling */
+
+footer .footer-spacer .footer-lower {
+  opacity: 20%;
+}
