@@ -15,13 +15,14 @@ Update URI: false
 */
 
 /* Navigation Bar on Desktop */
-div .navigation a:hover {
+.wp-block-navigation-item__content:hover {
   text-decoration: underline;
   text-decoration-color: #46c8b9;
 }
 
 /* Footer Styling */
 
-footer .footer-spacer .footer-lower {
-  opacity: 20%;
+footer .footer-spacer,
+.footer-lower {
+  opacity: 50%;
 }
