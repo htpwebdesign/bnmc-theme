@@ -10,6 +10,12 @@
   padding-left: 3rem;
 }
 
+.wwd-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 .wwd-text {
   width: 50%;
   padding-right: 3rem;

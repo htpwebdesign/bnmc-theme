@@ -14,10 +14,29 @@ Text Domain: bnmc-theme
 Update URI: false
 */
 
+/* Boiler Plate CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  width: 100%;
+}
+
 /* Navigation Bar on Desktop */
 .wp-block-navigation-item__content:hover {
   text-decoration: underline;
   text-decoration-color: #46c8b9;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.2rem;
 }
 
 /* Footer Styling */
