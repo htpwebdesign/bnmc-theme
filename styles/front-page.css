@@ -1,0 +1,35 @@
+/* What We Do Section */
+
+.what-we-do-row {
+  display: flex;
+  width: 100%;
+}
+
+.wwd-photo {
+  width: 50%;
+  padding-left: 3rem;
+}
+
+.wwd-text {
+  width: 50%;
+  padding-right: 3rem;
+}
+
+.wwd-buttons {
+  width: 100%;
+}
+
+@media (max-width: 64.0625rem) {
+  .what-we-do-row {
+    flex-direction: column;
+  }
+
+  .wwd-photo {
+    width: 100%;
+    padding: 0;
+  }
+  .wwd-text {
+    width: 100%;
+    padding: 0;
+  }
+}
