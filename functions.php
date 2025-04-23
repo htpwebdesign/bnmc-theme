@@ -152,3 +152,15 @@ function bnmc_add_custom_image_sizes( $size_names ) {
 	return array_merge( $size_names, $new_sizes );
 }
 add_filter( 'image_size_names_choose', 'bnmc_add_custom_image_sizes' );
+
+function enqueue_stats_tabs_assets() {
+    wp_enqueue_script(
+      'stats-tabs-js',
+      get_template_directory_uri() . '/assets/js/tabs.js',
+      [],       
+      '1.0.0',
+      true      
+    );
+  }
+  add_action( 'wp_enqueue_scripts', 'enqueue_stats_tabs_assets' );
+  

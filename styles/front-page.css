@@ -76,8 +76,9 @@
 
 .tab-button.active,
 .tab-button[aria-selected="true"] {
-  background: var(--wp--preset--color--grape);
-  color: var(--wp--preset--color--light-apricot);
+  background: #8eb0dc;
+  color: #14192e;
+  border: 2px solid #6f8bd3;
   font-weight: 600;
 }
 
@@ -101,7 +102,7 @@
 }
 
 /* --- Content Panels --- */
-.tab-panel {
+.tab-content {
   border-radius: 10px;
   padding: 2rem;
   min-height: 220px;
@@ -114,7 +115,7 @@
   vertical-align: top;
 }
 
-.tab-panel.active {
+.tab-content.active {
   display: block;
   opacity: 1;
   animation: fadeInTab 0.4s;
@@ -133,7 +134,7 @@
 
 /* --- Responsive: Content area on mobile --- */
 @media (max-width: 767px) {
-  .tab-panel {
+  .tab-content {
     padding: 1rem;
     min-height: 120px;
   }
