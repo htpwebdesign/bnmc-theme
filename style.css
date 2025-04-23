@@ -31,6 +31,14 @@ body {
   width: 100%;
 }
 
+a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #46c8b9;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.2rem;
+}
+
 /* Navigation Bar on Desktop */
 .wp-block-navigation-item__content:hover {
   text-decoration: underline;

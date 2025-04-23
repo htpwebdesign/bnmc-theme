@@ -20,14 +20,29 @@
 					"slug": "teal"
 				},
 				{
+					"color": "#bfece7",
+					"name": "Light Teal",
+					"slug": "light-teal"
+				},
+				{
 					"color": "#8eb0dc",
 					"name": "Sky Blue",
 					"slug": "sky-blue"
 				},
 				{
+					"color": "#e8eff8",
+					"name": "Light Blue",
+					"slug": "light-blue"
+				},
+				{
 					"color": "#6f8bd3",
 					"name": "Bluey Blue",
 					"slug": "bluey-blue"
+				},
+				{
+					"color": "#f6f8fc",
+					"name": "Light Grey",
+					"slug": "light-grey"
 				}
 			]
 		},
