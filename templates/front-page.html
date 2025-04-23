@@ -11,8 +11,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"0"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:0"><!-- wp:button {"style":{"border":{"radius":"10px","width":"2px"},"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"fontSize":"button","borderColor":"white"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-border-color has-white-border-color has-button-font-size has-custom-font-size wp-element-button" href="http://localhost/capstone/about-us/" style="border-width:2px;border-radius:10px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60)">Learn More About Us</a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:0"><!-- wp:button {"className":"button","style":{"border":{"radius":"10px","width":"2px"},"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"fontSize":"button","borderColor":"white"} -->
+<div class="wp-block-button button"><a class="wp-block-button__link has-border-color has-white-border-color has-button-font-size has-custom-font-size wp-element-button" href="http://localhost/capstone/about-us/" style="border-width:2px;border-radius:10px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60)">Learn More About Us</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group --></div></div>
@@ -64,12 +64,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"wwd-buttons","layout":{"type":"flex","justifyContent":"left","flexWrap":"nowrap"}} -->
-<div class="wp-block-buttons wwd-buttons"><!-- wp:button {"className":"contact-button","style":{"border":{"radius":"10px"}}} -->
-<div class="wp-block-button contact-button"><a class="wp-block-button__link wp-element-button" href="http://localhost/capstone/contact/" style="border-radius:10px">Contact Us</a></div>
+<div class="wp-block-buttons wwd-buttons"><!-- wp:button {"className":"contact-button button","style":{"border":{"radius":"10px"}}} -->
+<div class="wp-block-button contact-button button"><a class="wp-block-button__link wp-element-button" href="http://localhost/capstone/contact/" style="border-radius:10px">Contact Us</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"light-teal","className":"learn-button is-style-outline","style":{"border":{"width":"3px","color":"#46c8b9","radius":"10px"}}} -->
-<div class="wp-block-button learn-button is-style-outline"><a class="wp-block-button__link has-light-teal-background-color has-background has-border-color wp-element-button" href="http://localhost/capstone/about-us/" style="border-color:#46c8b9;border-width:3px;border-radius:10px">Learn More</a></div>
+<!-- wp:button {"backgroundColor":"light-teal","className":"learn-button is-style-outline button","style":{"border":{"width":"3px","color":"#46c8b9","radius":"10px"}}} -->
+<div class="wp-block-button learn-button is-style-outline button"><a class="wp-block-button__link has-light-teal-background-color has-background has-border-color wp-element-button" href="http://localhost/capstone/about-us/" style="border-color:#46c8b9;border-width:3px;border-radius:10px">Learn More</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -107,10 +107,10 @@
 <h2 class="wp-block-heading has-h-2-font-size">Services We Provide</h2>
 <!-- /wp:heading -->
 
-<!-- wp:query {"queryId":9,"query":{"perPage":5,"pages":0,"offset":0,"postType":"bnmc-service","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/query-small-posts","name":"Small image and title"},"layout":{"type":"default"}} -->
-<div class="wp-block-query"><!-- wp:post-template {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40","margin":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"grid","columnCount":5}} -->
-<!-- wp:columns {"verticalAlignment":"center","style":{"border":{"radius":"15px"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"0","right":"0"},"blockGap":{"top":"0","left":"0"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center" style="border-radius:15px;margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--30);padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"","className":"services-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"0","right":"0"},"blockGap":"var:preset|spacing|30"},"border":{"radius":"15px"}},"backgroundColor":"sky-blue","layout":{"type":"default"}} -->
+<!-- wp:query {"queryId":9,"query":{"perPage":5,"pages":0,"offset":0,"postType":"bnmc-service","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/query-small-posts","name":"Small image and title"},"className":"services-grid","layout":{"type":"default"}} -->
+<div class="wp-block-query services-grid"><!-- wp:post-template {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40","margin":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"grid","columnCount":5}} -->
+<!-- wp:columns {"verticalAlignment":"center","className":"services-row","style":{"border":{"radius":"15px"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"0","right":"0"},"blockGap":{"top":"0","left":"0"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center services-row" style="border-radius:15px;margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--30);padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"","className":"services-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"0","right":"0"},"blockGap":"var:preset|spacing|30"},"border":{"radius":"15px"}},"backgroundColor":"sky-blue","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-center services-card has-sky-blue-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:0"><!-- wp:post-featured-image {"aspectRatio":"1","width":"175px","height":"175px","align":"center","style":{"border":{"radius":"100%"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} /-->
 
 <!-- wp:post-title {"textAlign":"center","level":4,"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|30"},"margin":{"bottom":"var:preset|spacing|20"}}},"fontSize":"button","fontFamily":"raleway-regular"} /--></div>
@@ -120,8 +120,8 @@
 <!-- /wp:query -->
 
 <!-- wp:buttons {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons" style="padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:button {"backgroundColor":"light-teal","className":"is-style-outline","style":{"border":{"radius":"10px","width":"3px"}},"borderColor":"teal"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-light-teal-background-color has-background has-border-color has-teal-border-color wp-element-button" href="http://localhost/capstone/services/" style="border-width:3px;border-radius:10px">Learn More</a></div>
+<div class="wp-block-buttons" style="padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:button {"backgroundColor":"light-teal","className":"is-style-outline button","style":{"border":{"radius":"10px","width":"3px"}},"borderColor":"teal"} -->
+<div class="wp-block-button is-style-outline button"><a class="wp-block-button__link has-light-teal-background-color has-background has-border-color has-teal-border-color wp-element-button" href="http://localhost/capstone/services/" style="border-width:3px;border-radius:10px">Learn More</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -136,8 +136,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"radius":"10px","width":"2px"}},"borderColor":"white"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-border-color has-white-border-color wp-element-button" href="http://localhost/capstone/contact/" style="border-width:2px;border-radius:10px">Contact Us</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"button","style":{"border":{"radius":"10px","width":"2px"}},"borderColor":"white"} -->
+<div class="wp-block-button button"><a class="wp-block-button__link has-border-color has-white-border-color wp-element-button" href="http://localhost/capstone/contact/" style="border-width:2px;border-radius:10px">Contact Us</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:cover -->

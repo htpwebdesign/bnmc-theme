@@ -140,3 +140,42 @@
 }
 
 /* Services Section */
+
+@media (max-width: 65.9375rem) {
+  .services-grid .is-layout-grid.columns-5 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Footer */
+@media (max-width: 74.0625rem) {
+  .map-column {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .connect-column {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .links-column,
+  .links-column a {
+    display: none;
+  }
+
+  .contact-column {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .office-column {
+    display: none;
+  }
+
+  .map-column {
+    display: none;
+  }
+}
