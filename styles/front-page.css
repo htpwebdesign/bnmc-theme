@@ -139,8 +139,4 @@
   }
 }
 
-/* Giving columns space */
-.wp-block-columns {
-  gap: 2.5rem !important;
-  align-items: flex-start;
-}
+/* Services Section */
