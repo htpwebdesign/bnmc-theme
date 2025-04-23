@@ -48,6 +48,10 @@ body {
 
 /* Footer Styling */
 
+footer {
+  margin-top: 0;
+}
+
 footer .footer-spacer,
 .footer-lower {
   opacity: 50%;
