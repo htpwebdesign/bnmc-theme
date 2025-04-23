@@ -46,6 +46,13 @@ body {
   text-underline-offset: 0.2rem;
 }
 
+/* Nav bar on mobile */
+@media (max-width: 47rem) {
+  .wp-block-buttons .nav-cta {
+    display: none;
+  }
+}
+
 /* Footer Styling */
 
 footer {
