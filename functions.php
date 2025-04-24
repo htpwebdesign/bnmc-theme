@@ -172,21 +172,14 @@ function bnmc_get_service_meta_for_api($object)
 }
 add_action('rest_api_init', 'bnmc_add_service_meta_to_rest');
 
-// Enqueue Google Fonts
-function add_google_fonts()
-{
-  wp_enqueue_style(
-    'google-fonts',
-    'https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&display=swap',
-    false
-  );
-}
-add_action('wp_enqueue_scripts', 'add_google_fonts');
+function bnmc_setup() {
+	add_editor_style( get_stylesheet_uri() );
 
 // Add custom image sizes
 add_image_size('400x500', 400, 500, true);
 add_image_size('200x250', 200, 250, true);
-
+}
+add_action( 'after_setup_theme', 'bnmc_setup' );
 // Make custom sizes selectable from WordPress admin.
 function bnmc_add_custom_image_sizes($size_names)
 {
