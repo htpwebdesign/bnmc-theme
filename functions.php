@@ -1,6 +1,13 @@
 <?php
 
 // Theme setup
+function bnmc_theme_setup() {
+    add_theme_support( 'editor-styles' );
+
+    add_editor_style( get_stylesheet_uri() );
+}
+add_action( 'after_setup_theme', 'bnmc_theme_setup' );
+
 function enqueue_normalize_css()
 {
   wp_enqueue_style(
