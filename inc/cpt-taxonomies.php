@@ -1,5 +1,6 @@
 <?php
 
+// Register Services & Radiologists CPTs
 function bnmc_register_custom_post_types() {
     // --- Services CPT ---
     $service_labels = array(
@@ -39,22 +40,22 @@ function bnmc_register_custom_post_types() {
     );
 
     $service_args = array(
-        'labels'              => $service_labels,
-        'public'              => true,
-        'publicly_queryable'  => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'show_in_rest'        => true,
-        'query_var'           => true,
-        'rewrite'             => array( 'slug' => 'services' ),
-        'capability_type'     => 'post',
-        'has_archive'         => true,
-        'hierarchical'        => false,
-        'menu_position'       => 5,
-        'menu_icon'           => 'dashicons-yes-alt',
-        'supports'            => array( 'title', 'editor' ),
+        'labels'             => $service_labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'show_in_nav_menus'  => true,
+        'show_in_admin_bar'  => true,
+        'show_in_rest'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'services' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'menu_icon'          => 'dashicons-yes-alt',
+        'supports'           => array( 'title', 'editor' ),
     );
     register_post_type( 'bnmc-service', $service_args );
 
@@ -96,27 +97,29 @@ function bnmc_register_custom_post_types() {
     );
 
     $radiologist_args = array(
-        'labels'              => $radiologist_labels,
-        'public'              => true,
-        'publicly_queryable'  => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'show_in_rest'        => true,
-        'query_var'           => true,
-        'rewrite'             => array( 'slug' => 'radiologists' ),
-        'capability_type'     => 'post',
-        'has_archive'         => true,
-        'hierarchical'        => false,
-        'menu_position'       => 6,
-        'menu_icon'           => 'dashicons-businessperson',
-        'supports'            => array( 'title', 'editor', 'thumbnail' ),
+        'labels'             => $radiologist_labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'show_in_nav_menus'  => true,
+        'show_in_admin_bar'  => true,
+        'show_in_rest'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'radiologists' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 6,
+        'menu_icon'          => 'dashicons-businessperson',
+        'supports'           => array( 'title', 'editor', 'thumbnail' ),
     );
     register_post_type( 'bnmc-radiologist', $radiologist_args );
 }
 add_action( 'init', 'bnmc_register_custom_post_types' );
 
+
+// Register Services & Specialisations taxonomies
 function bnmc_register_taxonomies() {
     // --- Services Taxonomy ---
     $service_tax_labels = array(
@@ -162,6 +165,7 @@ function bnmc_register_taxonomies() {
         'add_new_item'          => __( 'Add New Specialisation', 'bnmc-theme' ),
         'new_item_name'         => __( 'New Specialisation Name', 'bnmc-theme' ),
         'menu_name'             => __( 'Specialisations', 'bnmc-theme' ),
+
         'items_list_navigation' => __( 'Specialisations list navigation', 'bnmc-theme' ),
         'items_list'            => __( 'Specialisations list', 'bnmc-theme' ),
         'item_link'             => __( 'Specialisation Link', 'bnmc-theme' ),

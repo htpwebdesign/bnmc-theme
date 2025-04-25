@@ -65,36 +65,6 @@ function add_posthog_analytics()
 }
 add_action('wp_head', 'add_posthog_analytics');
 
-// Register Custom Post Type for 'Services'
-// function bnmc_register_service_post_type()
-// {
-//   $labels = array(
-//     'name'               => __('Services', 'bnmc-theme'),
-//     'singular_name'      => __('Service', 'bnmc-theme'),
-//     'add_new'            => __('Add New Service', 'bnmc-theme'),
-//     'add_new_item'       => __('Add New Service', 'bnmc-theme'),
-//     'edit_item'          => __('Edit Service', 'bnmc-theme'),
-//     'new_item'           => __('New Service', 'bnmc-theme'),
-//     'view_item'          => __('View Service', 'bnmc-theme'),
-//     'search_items'       => __('Search Services', 'bnmc-theme'),
-//     'not_found'          => __('No services found', 'bnmc-theme'),
-//     'not_found_in_trash' => __('No services found in Trash', 'bnmc-theme'),
-//   );
-
-//   $args = array(
-//     'label'               => __('Services', 'bnmc-theme'),
-//     'labels'              => $labels,
-//     'public'              => true,
-//     'has_archive'         => true,
-//     'show_in_rest'        => true,
-//     'menu_icon'           => 'dashicons-admin-tools',
-//     'supports'            => array('title', 'editor', 'thumbnail'),
-//   );
-
-//   register_post_type('bnmc-service', $args);
-// }
-// add_action('init', 'bnmc_register_service_post_type');
-
 // Include additional CPT and taxonomy definitions if needed
 require_once get_template_directory() . '/inc/cpt-taxonomies.php';
 
