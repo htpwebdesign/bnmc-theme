@@ -63,3 +63,12 @@ footer .footer-spacer,
 .footer-lower {
   opacity: 50%;
 }
+
+/* About Page */
+/* Removing Links to Taxonomies */
+.taxonomy-bnmc-specialisation.wp-block-post-terms a {
+  color: #46c8b9 !important;
+  text-decoration: none !important;
+  font-style: italic !important;
+  pointer-events: none !important;
+}
