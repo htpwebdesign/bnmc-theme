@@ -65,10 +65,9 @@ footer .footer-spacer,
 }
 
 /* About Page */
-/* Removing Links to Taxonomies */
-.taxonomy-bnmc-specialisation.wp-block-post-terms a {
-  color: #46c8b9 !important;
-  text-decoration: none !important;
-  font-style: italic !important;
-  pointer-events: none !important;
+.bnmc-term-badge {
+  color: #46c8b9;
+  font-style: italic;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
