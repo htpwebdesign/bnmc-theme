@@ -163,3 +163,30 @@ function bnmc_get_service_meta_for_api($object) {
         'duration' => get_post_meta($post_id, '_service_duration', true)
     );
 }
+
+
+// Remove <a> tags from bnmc-specialisation taxonomy terms and wrap in <span>
+function bnmc_strip_term_links( $links ) {
+  foreach ( $links as &$html ) {
+      $name  = strip_tags( $html );
+      $html  = '<span class="bnmc-term-badge">' . esc_html( $name ) . '</span>';
+  }
+  return $links;
+}
+add_filter( 'term_links-bnmc-specialisation', 'bnmc_strip_term_links' );
+
+// Swap <a>→<span> in Core Post Terms block for bnmc-specialisation taxonomy
+function bnmc_unanchor_post_terms_block( $block_content, $block ) {
+  if (
+      ! empty( $block['attrs']['taxonomy'] ) &&
+      $block['attrs']['taxonomy'] === 'bnmc-specialisation'
+  ) {
+      $block_content = preg_replace(
+          '#<a[^>]*>(.*?)</a>#i',
+          '<span class="bnmc-term-badge">$1</span>',
+          $block_content
+      );
+  }
+  return $block_content;
+}
+add_filter( 'render_block_core/post-terms', 'bnmc_unanchor_post_terms_block', 10, 2 );
