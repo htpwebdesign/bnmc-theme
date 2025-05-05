@@ -55,7 +55,7 @@ function bnmc_register_custom_post_types() {
         'hierarchical'       => false,
         'menu_position'      => 5,
         'menu_icon'          => 'dashicons-yes-alt',
-        'supports'           => array( 'title', 'editor' ),
+        'supports'           => array( 'title', 'editor', 'thumbnail' ),
     );
     register_post_type( 'bnmc-service', $service_args );
 
