@@ -190,3 +190,9 @@ function bnmc_unanchor_post_terms_block( $block_content, $block ) {
   return $block_content;
 }
 add_filter( 'render_block_core/post-terms', 'bnmc_unanchor_post_terms_block', 10, 2 );
+
+// Remove author name and URL from oEmbed response data
+add_filter( 'oembed_response_data', function( $data, $post, $context ) {
+  unset( $data['author_name'], $data['author_url'] );
+  return $data;
+}, 99, 3 );
