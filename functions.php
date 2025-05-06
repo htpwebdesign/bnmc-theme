@@ -215,17 +215,23 @@ function walkthrough_widget_content() {
 // Add custom login logo
 function my_login_logo() { ?>
   <style type="text/css">
+body.login {
+          background-color:rgb(161, 188, 224); 
+      } 
+
       #login h1 a {
-          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
-  height: 65px;
-  width: 320px;
-  background-size: 320px 65px;
-  background-repeat: no-repeat;
-        padding-bottom: 30px;
+          background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site-login-logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 250px;   
+          height: 250px;   
+          display: block;
+          margin: 0 auto 30px auto;
       }
   </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 
 // Change the login logo URL to the home page
 function my_login_logo_url() {
@@ -234,6 +240,6 @@ function my_login_logo_url() {
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
 function my_login_logo_url_title() {
-  return 'Your Site Name and Info';
+  return 'BNMC MRI Clinic';
 }
 add_filter( 'login_headertext', 'my_login_logo_url_title' );
