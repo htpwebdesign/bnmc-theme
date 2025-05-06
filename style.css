@@ -71,3 +71,10 @@ footer .footer-spacer,
   padding-bottom: 0.5rem;
   font-size: 1.4rem;
 }
+
+/* Hero image backup */
+.hero-background {
+  background-image: url(https://bnmcmriclinic.bcitwebdeveloper.ca/wp-content/uploads/2025/04/oxtcsmb3wo4zjjydhazw.webp);
+  background-size: cover;
+  background-position: center;
+}
