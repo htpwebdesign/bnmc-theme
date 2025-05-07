@@ -254,3 +254,25 @@ function wporg_remove_all_dashboard_metaboxes() {
 	remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
 }
 add_action( 'wp_dashboard_setup', 'wporg_remove_all_dashboard_metaboxes' );
+
+// Display a welcom message at the top of the dashboard
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+
+function my_custom_dashboard_widgets() {
+    wp_add_dashboard_widget(
+        'custom_welcome_widget',
+        'Welcome to BNMC MRI Clinic',
+        'custom_dashboard_welcome'
+    );
+
+    // Move your widget to the top
+    global $wp_meta_boxes;
+    $dashboard = $wp_meta_boxes['dashboard']['normal']['core'];
+    $my_widget = array('custom_welcome_widget' => $dashboard['custom_welcome_widget']);
+    unset($dashboard['custom_welcome_widget']);
+    $wp_meta_boxes['dashboard']['normal']['core'] = $my_widget + $dashboard;
+}
+
+function custom_dashboard_welcome() {
+    echo '<p>Welcome to your dashboard! You can find your walkthrough guide in the widget below. If you have any questions, please feel free to reach out!</p>';
+}
