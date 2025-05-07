@@ -215,7 +215,7 @@ function walkthrough_widget_content() {
 // Add custom login logo
 function my_login_logo() { ?>
   <style type="text/css">
-    
+
       body.login {
           background-color:rgb(161, 188, 224); 
       } 
@@ -244,3 +244,13 @@ function my_login_logo_url_title() {
   return 'BNMC MRI Clinic';
 }
 add_filter( 'login_headertext', 'my_login_logo_url_title' );
+
+// Removing all dashboard widgets, except for the custom one.
+function wporg_remove_all_dashboard_metaboxes() {
+	remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+	remove_meta_box( 'health_check_status', 'dashboard', 'normal' );
+	remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+	remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
+}
+add_action( 'wp_dashboard_setup', 'wporg_remove_all_dashboard_metaboxes' );
