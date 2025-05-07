@@ -215,7 +215,8 @@ function walkthrough_widget_content() {
 // Add custom login logo
 function my_login_logo() { ?>
   <style type="text/css">
-body.login {
+    
+      body.login {
           background-color:rgb(161, 188, 224); 
       } 
 
