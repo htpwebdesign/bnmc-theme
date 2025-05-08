@@ -285,3 +285,16 @@ function fwd_remove_admin_links() {
 	}
 }
 add_action( 'admin_menu', 'fwd_remove_admin_links' );
+
+function add_walkthrough_dashboard_widget() {
+    wp_add_dashboard_widget(
+        'walkthrough_widget',
+        'Site Walkthrough Guide',
+        'walkthrough_widget_content'
+    );
+}
+add_action('wp_dashboard_setup', 'add_walkthrough_dashboard_widget');
+
+function walkthrough_widget_content() {
+    echo '<p><a href="https://bnmcmriclinic.bcitwebdeveloper.ca/wp-content/uploads/2025/05/Client-Instructions.pdf" target="_blank" rel="noopener noreferrer">📄 View Site Walkthrough (PDF)</a></p>';
+}
