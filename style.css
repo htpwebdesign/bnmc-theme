@@ -89,3 +89,35 @@ footer .footer-spacer,
   background-size: cover;
   background-position: center;
 }
+
+* Footer */ @media (max-width: 74.0625rem) {
+  .map-column {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .connect-column {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .links-column,
+  .links-column a {
+    display: none;
+  }
+
+  .contact-column {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .office-column {
+    display: none;
+  }
+
+  .map-column {
+    display: none;
+  }
+}
