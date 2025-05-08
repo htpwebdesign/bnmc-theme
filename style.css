@@ -38,6 +38,10 @@ body {
   text-underline-offset: 0.2rem;
 }
 
+.button:focus {
+  outline: 2px solid var(--wp--preset--color--dark-blue);
+}
+
 /* Navigation Bar on Desktop */
 .wp-block-navigation-item__content:hover {
   text-decoration: underline;
