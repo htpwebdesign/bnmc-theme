@@ -208,7 +208,7 @@ function add_walkthrough_dashboard_widget() {
 add_action('wp_dashboard_setup', 'add_walkthrough_dashboard_widget');
 
 function walkthrough_widget_content() {
-    echo '<p><a href="' . esc_url( site_url('/wp-content/uploads/walkthrough.pdf') ) . '" target="_blank">📄 View Site Walkthrough (PDF)</a></p>';
+    echo '<p><a href="' . esc_url( site_url('wp-content/uploads/2025/05/Client-Instructions.pdf') ) . '" target="_blank">📄 View Site Walkthrough (PDF)</a></p>';
 }
 
 
