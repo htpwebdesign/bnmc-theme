@@ -197,18 +197,17 @@ add_filter( 'oembed_response_data', function( $data, $post, $context ) {
   return $data;
 }, 99, 3 );
 
-
 function add_walkthrough_dashboard_widget() {
     wp_add_dashboard_widget(
-        'walkthrough_widget', // Widget ID
-        'Site Walkthrough Guide', // Widget Title
-        'walkthrough_widget_content' // Callback function name
+        'walkthrough_widget',
+        'Site Walkthrough Guide',
+        'walkthrough_widget_content'
     );
 }
 add_action('wp_dashboard_setup', 'add_walkthrough_dashboard_widget');
 
 function walkthrough_widget_content() {
-    echo '<p><a href="' . esc_url( site_url('wp-content/uploads/2025/05/Client-Instructions.pdf') ) . '" target="_blank">📄 View Site Walkthrough (PDF)</a></p>';
+    echo '<p><a href="https://bnmcmriclinic.bcitwebdeveloper.ca/wp-content/uploads/2025/05/Client-Instructions.pdf" target="_blank" rel="noopener noreferrer">📄 View Site Walkthrough (PDF)</a></p>';
 }
 
 
@@ -285,3 +284,6 @@ function fwd_remove_admin_links() {
 	}
 }
 add_action( 'admin_menu', 'fwd_remove_admin_links' );
+
+
+
