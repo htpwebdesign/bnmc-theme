@@ -90,7 +90,9 @@ footer .footer-spacer,
   background-position: center;
 }
 
-* Footer */ @media (max-width: 74.0625rem) {
+/* footer */
+
+@media (max-width: 74.0625rem) {
   .map-column {
     display: none;
   }
