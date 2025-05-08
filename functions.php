@@ -276,3 +276,12 @@ function my_custom_dashboard_widgets() {
 function custom_dashboard_welcome() {
     echo '<p>Welcome to your dashboard! You can find your walkthrough guide in the widget below. If you have any questions, please feel free to reach out!</p>';
 }
+
+// Remove admin menu links for non-Administrator accounts
+function fwd_remove_admin_links() {
+	if ( !current_user_can( 'manage_options' ) ) {
+		remove_menu_page( 'edit.php' );           // Remove Posts link
+    		remove_menu_page( 'edit-comments.php' );  // Remove Comments link
+	}
+}
+add_action( 'admin_menu', 'fwd_remove_admin_links' );
